@@ -1,0 +1,16 @@
+Student_ID,Name,Age,Gender,Department,Maths,Python,Database,Attendance
+101,Abhinav,21,Male,CSE,85,90,78,92
+102,Rahul,20,Male,CSE,72,75,80,85
+103,Priya,21,Female,ISE,95,88,92,96
+104,Anjali,20,Female,CSE,68,72,75,80
+105,Rohan,22,Male,ECE,55,60,58,70
+106,Neha,21,Female,ISE,88,91,85,94
+107,Aman,22,Male,CSE,45,50,48,65
+108,Kavya,20,Female,ECE,78,82,80,88
+109,Arjun,21,Male,ISE,92,95,90,97
+110,Sneha,20,Female,CSE,85,87,89,93
+111,Vikram,23,Male,ECE,60,65,62,75
+112,Pooja,21,Female,ISE,90,89,94,95
+113,Karan,22,Male,CSE,75,78,72,86
+114,Meena,20,Female,ECE,82,80,85,90
+115,Raj,21,Male,CSE,70,74,68,82
