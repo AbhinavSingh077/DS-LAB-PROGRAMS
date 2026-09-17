@@ -1,32 +1,49 @@
 import pandas as pd
+import os
 
 # ==========================================
 # EXERCISE 1: IMPORT CSV AND EXCEL DATASETS
 # ==========================================
 
-# Import CSV dataset
-csv_data = pd.read_csv("Exercise_1/data/students.csv")
+# File paths
+csv_file = "Exercise_1/data/students.csv"
+excel_file = "Exercise_1/data/students.xlsx"
+
+# ==========================================
+# IMPORT CSV DATASET
+# ==========================================
+
+csv_data = pd.read_csv(csv_file)
 
 print("========== CSV DATA ==========")
 print(csv_data)
 
-# Dataset information
+# ==========================================
+# DATASET INFORMATION
+# ==========================================
+
 print("\n========== DATASET INFORMATION ==========")
 csv_data.info()
 
-# Data types
+# ==========================================
+# DATA TYPES
+# ==========================================
+
 print("\n========== DATA TYPES ==========")
 print(csv_data.dtypes)
 
-# Summary statistics
+# ==========================================
+# SUMMARY STATISTICS
+# ==========================================
+
 print("\n========== SUMMARY STATISTICS ==========")
 print(csv_data.describe())
 
 # ==========================================
-# CREATE EXCEL FILE
+# CREATE EXCEL FILE FROM CSV
 # ==========================================
 
-csv_data.to_excel("Exercise_1/data/students.xlsx", index=False)
+csv_data.to_excel(excel_file, index=False)
 
 print("\nExcel file created successfully!")
 
@@ -34,13 +51,28 @@ print("\nExcel file created successfully!")
 # IMPORT EXCEL DATASET
 # ==========================================
 
-excel_data = pd.read_excel("Exercise_1/data/students.xlsx")
+excel_data = pd.read_excel(excel_file)
 
 print("\n========== EXCEL DATA ==========")
 print(excel_data)
 
+# ==========================================
+# EXCEL DATASET INFORMATION
+# ==========================================
+
+print("\n========== EXCEL DATASET INFORMATION ==========")
+excel_data.info()
+
+# ==========================================
+# EXCEL DATA TYPES
+# ==========================================
+
 print("\n========== EXCEL DATA TYPES ==========")
 print(excel_data.dtypes)
+
+# ==========================================
+# EXCEL SUMMARY STATISTICS
+# ==========================================
 
 print("\n========== EXCEL SUMMARY STATISTICS ==========")
 print(excel_data.describe())
@@ -57,7 +89,7 @@ print("""
    Examples: CSV files, Excel spreadsheets, SQL tables.
 
 2. Semi-Structured Data:
-   Data that does not follow a strict table format
+   Data that does not follow a strict tabular format
    but contains tags or keys.
    Examples: JSON, XML, HTML.
 
@@ -65,3 +97,5 @@ print("""
    Data without a fixed tabular structure.
    Examples: Images, videos, audio, text documents.
 """)
+
+print("========== EXERCISE 1 COMPLETED ==========")
